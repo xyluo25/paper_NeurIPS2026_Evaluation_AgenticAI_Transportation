@@ -1,0 +1,17 @@
+{
+  "api_ready": 0,
+  "model_id": "kimi-k2.6",
+  "provider": "ollama",
+  "provider_status": {
+    "api_key_name": "OLLAMA_API_KEY",
+    "api_key_present": 0,
+    "api_ready": 0,
+    "endpoint": "https://ollama.com",
+    "model_id": "kimi-k2.6",
+    "provider": "ollama",
+    "sdk_available": 1,
+    "selected_order": 11,
+    "system_id": "agentic_model_kimi_k2_6"
+  },
+  "system_id": "agentic_model_kimi_k2_6"
+}

@@ -1,0 +1,15 @@
+model_id,system_id,provider,api_key_name,api_key_present,sdk_available,api_ready,endpoint,selected_order
+gpt-5.5,agentic_model_gpt_5_5,openai,OPENAI_KEY,1,1,1,https://api.openai.com,0
+claude-fable-5,agentic_model_claude_fable_5,claude,CLAUDE_API_KEY,0,1,0,https://api.anthropic.com,1
+claude-mythos-5,agentic_model_claude_mythos_5,claude,CLAUDE_API_KEY,0,1,0,https://api.anthropic.com,2
+claude-opus-4-8,agentic_model_claude_opus_4_8,claude,CLAUDE_API_KEY,0,1,0,https://api.anthropic.com,3
+gemini-3.5-flash,agentic_model_gemini_3_5_flash,gemini,GEMINI_API_KEY,0,1,0,https://generativelanguage.googleapis.com,4
+nemotron-3-ultra,agentic_model_nemotron_3_ultra,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,5
+mnimax-m3,agentic_model_mnimax_m3,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,6
+gemma4,agentic_model_gemma4,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,7
+qwen3.5,agentic_model_qwen3_5,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,8
+glm-5,agentic_model_glm_5,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,9
+deepseek-v4-pro,agentic_model_deepseek_v4_pro,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,10
+kimi-k2.6,agentic_model_kimi_k2_6,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,11
+gpt-oss,agentic_model_gpt_oss,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,12
+ministral-3,agentic_model_ministral_3,ollama,OLLAMA_API_KEY,0,1,0,https://ollama.com,13

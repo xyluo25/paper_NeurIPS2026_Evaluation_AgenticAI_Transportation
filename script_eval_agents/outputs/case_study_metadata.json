@@ -1,0 +1,11 @@
+{
+  "control_files": 2,
+  "example_dir": "Agentic_RealTwin\\datasets\\example2",
+  "has_matchup_table": true,
+  "has_updated_network": true,
+  "network_edges": 18,
+  "network_junctions": 9,
+  "signal_programs": 3,
+  "sumo_output_files": 6,
+  "traffic_files": 7
+}

@@ -1,0 +1,17 @@
+{
+  "api_ready": 1,
+  "model_id": "gpt-5.5",
+  "provider": "openai",
+  "provider_status": {
+    "api_key_name": "OPENAI_KEY",
+    "api_key_present": 1,
+    "api_ready": 1,
+    "endpoint": "https://api.openai.com",
+    "model_id": "gpt-5.5",
+    "provider": "openai",
+    "sdk_available": 1,
+    "selected_order": 0,
+    "system_id": "agentic_model_gpt_5_5"
+  },
+  "system_id": "agentic_model_gpt_5_5"
+}

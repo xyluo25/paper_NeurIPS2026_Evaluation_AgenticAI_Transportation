@@ -1,0 +1,2 @@
+system_id,system,model_id,provider,api_key_name,api_ready,end_to_end_success_rate,valid_artifact_rate,domain_validity_score,simulation_run_rate,mean_geh,geh_lt5_rate,tool_success_rate,hil_recall,hil_precision,robust_completion_rate,human_corrections,avg_time_min
+agentic_model_glm_5,Agentic RealTwin (glm-5),glm-5,ollama,OLLAMA_API_KEY,0,1.0,0.8199,0.8224,0.8235,2.3263,1.0,0.9083,1.0,0.9157,1.0,2.1,15.99

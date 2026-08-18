@@ -1,0 +1,581 @@
+:root {
+    --rt-gap: clamp(8px, 1vw, 16px);
+    --rt-header-padding-y: clamp(2px, 0.6dvh, 6px);
+    --rt-header-margin-bottom: clamp(4px, 0.8dvh, 10px);
+    --rt-page-height: 100dvh;
+}
+
+html,
+body,
+.gradio-container,
+.app {
+    height: var(--rt-page-height);
+    min-height: 0;
+    overflow: hidden;
+}
+
+.submit-button{
+    background-color: #4CAF50 !important; /* Green */
+    border: none !important;
+}
+
+.gradio-container {
+    max-width: none !important;
+    width: 100% !important;
+}
+
+.app {
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    max-width: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.container {
+    padding-top: 0 !important;
+}
+
+.app > .wrap,
+.app > .wrap > .contain,
+.app > .wrap > .contain > .column {
+    height: 100% !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+}
+
+.app > .wrap > .contain > .column {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+}
+
+#title_header_layout {
+    align-items: center !important;
+    flex: 0 0 auto !important;
+    height: auto !important;
+    /* margin: 0 0 var(--rt-header-margin-bottom) 0 !important; */
+    min-height: 0 !important;
+    padding: var(--rt-header-padding-y) var(--rt-gap) !important;
+}
+
+#title_header {
+    height: auto;
+    margin: 0;
+    min-height: 0 !important;
+    overflow: visible !important;
+    padding: 0;
+    text-align: center !important;
+}
+
+#title_header .wrap,
+#title_header .container {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    padding: 0 !important;
+}
+
+#title_header span,
+#title_header label,
+#title_header h2,
+#title_header .output-class {
+    display: block !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0;
+    line-height: 1.18;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: normal;
+}
+
+#main_layout {
+    align-items: stretch !important;
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-wrap: wrap !important;
+    height: auto !important;
+    /* gap: var(--rt-gap) !important; */
+    max-height: none !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+}
+
+#left_layout {
+    display: flex !important;
+    flex: 1 1 clamp(280px, 28vw, 430px) !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: var(--rt-gap) !important;
+    height: 100% !important;
+    max-width: min(440px, 100%) !important;
+    min-height: 0 !important;
+    min-width: min(280px, 100%) !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    scrollbar-gutter: stable;
+    padding-left: var(--rt-gap) !important;
+}
+
+#input_container {
+    flex: 0 0 auto !important;
+    min-height: 0 !important;
+    width: 100%;
+    gap: 0.2rem !important;
+}
+
+#clear_button,
+#clear_button button {
+    min-height: 36px !important;
+    width: 100% !important;
+}
+
+#hil_title {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+#hil_title h3,
+#hil_title p {
+    font-size: clamp(0.9rem, 0.95vw, 1rem) !important;
+    line-height: 1.25 !important;
+    margin: 0 !important;
+    white-space: normal !important;
+    color: blue !important;
+}
+
+#hil_layout {
+    display: flex !important;
+    /* flex: 0 0 clamp(245px, 30dvh, 305px) !important; */
+    flex-direction: column !important;
+    /* gap: clamp(4px, 0.7dvh, 8px) !important; */
+    /* min-height: 240px !important; */
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    width: 100%;
+}
+
+#hil_guidance {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+#hil_guidance p,
+#hil_guidance ol {
+    font-size: clamp(0.74rem, 0.78vw, 0.88rem) !important;
+    line-height: 1.24 !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+#hil_guidance ol {
+    padding-left: 1.1rem !important;
+}
+
+#hil_selection {
+    box-sizing: border-box !important;
+    flex: 0 0 clamp(75px, 9dvh, 95px) !important;
+    font-size: 8px !important;
+    min-height: clamp(75px, 9dvh, 95px) !important;
+    overflow: hidden !important;
+}
+
+#hil_layout > .form {
+    align-items: stretch !important;
+    display: flex !important;
+    flex: 0 0 auto !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    /* gap: clamp(4px, 0.7dvh, 8px) !important; */
+    min-height: 0 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}
+
+#hil_layout > .form > #hil_selection,
+#hil_layout > .form > #hil_confirm {
+    align-self: stretch !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}
+
+#hil_selection .wrap,
+#hil_selection label,
+#hil_selection .container {
+    box-sizing: border-box !important;
+    height: 100% !important;
+    min-height: inherit !important;
+}
+
+#hil_selection textarea {
+    box-sizing: border-box !important;
+    display: block !important;
+    font-size: 8px !important;
+    height: 100% !important;
+    line-height: 1.2 !important;
+    max-height: none !important;
+    min-height: clamp(60px, 7.5dvh, 80px) !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    resize: none !important;
+    scrollbar-gutter: stable !important;
+    white-space: pre-wrap !important;
+}
+
+#hil_confirm {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    flex-direction: column !important;
+    font-weight: bold !important;
+    min-height: 0 !important;
+    padding: 6px 8px !important;
+    width: 100% !important;
+}
+
+#hil_confirm fieldset,
+#hil_confirm .wrap {
+    width: 100% !important;
+}
+
+#hil_confirm fieldset > div,
+#hil_confirm .wrap > div {
+    align-items: stretch !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+}
+
+#hil_confirm label {
+    min-height: 28px !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    width: 100% !important;
+}
+
+#hil_feedback {
+    flex: 0 0 auto !important;
+    max-height: 110px !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+    transition: max-height 0.12s ease, opacity 0.12s ease !important;
+    width: 100% !important;
+}
+
+#hil_feedback:has(textarea:disabled) {
+    flex-basis: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    max-height: 0 !important;
+    min-height: 0 !important;
+    opacity: 0 !important;
+    padding: 0 !important;
+    pointer-events: none !important;
+}
+
+#hil_feedback:has(textarea:disabled) * {
+    border: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    max-height: 0 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+#hil_feedback:has(textarea:not(:disabled)) {
+    flex-basis: auto !important;
+    height: auto !important;
+    max-height: 120px !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+#hil_feedback textarea {
+    font-size: 0.78rem !important;
+    max-height: 72px !important;
+    min-height: 52px !important;
+    overflow-y: auto !important;
+    resize: vertical !important;
+}
+
+#example_layout {
+    /* flex: 1 1 150px !important; */
+    font-size: clamp(0.62rem, 0.66vw, 0.78rem) !important;
+    /* min-height: 100px !important; */
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    width: 100% !important;
+}
+
+#example_layout,
+#example_layout * {
+    font-size: clamp(0.62rem, 0.66vw, 0.78rem) !important;
+    line-height: 1.15 !important;
+}
+
+#example_layout button {
+    min-height: 0 !important;
+    padding: 6px 8px !important;
+}
+
+#thoughts_panel {
+    flex: 0 0 auto !important;
+    margin-top: auto !important;
+    max-height: clamp(42px, 7dvh, 58px) !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    width: 100% !important;
+}
+
+#thoughts_button,
+#thoughts_button button {
+    min-height: clamp(36px, 5dvh, 46px) !important;
+    width: 100% !important;
+}
+
+#right_layout {
+    flex: 2 1 680px !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    min-width: min(420px, 100%) !important;
+    overflow: auto !important;
+    scrollbar-gutter: stable;
+}
+
+#right_layout .wrap,
+#right_layout .bubble-wrap {
+    max-width: 100%;
+}
+
+#thoughts_popup {
+    background: #ffffff !important;
+    border: 1px solid #d0d5dd !important;
+    border-radius: 8px !important;
+    bottom: clamp(12px, 2.5dvh, 32px) !important;
+    box-shadow: 0 16px 48px rgba(16, 24, 40, 0.22) !important;
+    box-sizing: border-box !important;
+    max-height: min(78dvh, 760px) !important;
+    max-width: calc(100vw - 24px) !important;
+    overflow: hidden !important;
+    padding: clamp(10px, 1.5vw, 16px) !important;
+    position: fixed !important;
+    right: clamp(12px, 2.5vw, 32px) !important;
+    width: min(760px, calc(100vw - 24px)) !important;
+    z-index: 1000 !important;
+}
+
+#thoughts_popup_header {
+    align-items: center !important;
+    display: flex !important;
+    flex: 0 0 auto !important;
+    gap: 12px !important;
+    justify-content: space-between !important;
+    margin: 0 0 8px 0 !important;
+    min-height: 36px !important;
+}
+
+#thoughts_popup_title {
+    flex: 1 1 auto !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+}
+
+#thoughts_popup_title h3,
+#thoughts_popup_title p {
+    font-size: clamp(0.95rem, 1vw, 1.1rem) !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+}
+
+#thoughts_popup_close,
+#thoughts_popup_close button {
+    flex: 0 0 auto !important;
+    min-height: 32px !important;
+    min-width: 72px !important;
+    width: auto !important;
+}
+
+#thoughts_popup_message {
+    width: 100% !important;
+}
+
+#thoughts_popup_message textarea {
+    font-size: clamp(0.78rem, 0.85vw, 0.95rem) !important;
+    height: min(62dvh, 620px) !important;
+    line-height: 1.35 !important;
+    max-height: min(62dvh, 620px) !important;
+    min-height: min(280px, 48dvh) !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    resize: vertical !important;
+    scrollbar-gutter: stable !important;
+    white-space: pre-wrap !important;
+}
+
+footer,
+.svelte-1to105q {
+    display: none !important;
+}
+
+#thoughts_box {
+    width: min(100%, 120px) !important;
+}
+
+#submit_button,
+#stop_button {
+    min-height: clamp(48px, 8dvh, 85px) !important;
+}
+
+#submit_button {
+    display: flex;
+}
+
+.hil-active textarea,
+.hil-active .wrap {
+    border-color: #b42318 !important;
+    box-shadow: 0 0 0 2px rgba(180, 35, 24, 0.18) !important;
+}
+
+#hil_selection textarea:not(:disabled),
+#hil_confirm:has(input:not(:disabled)) .wrap {
+    border-color: #b42318 !important;
+    box-shadow: 0 0 0 2px rgba(180, 35, 24, 0.18) !important;
+}
+
+.hil-active textarea {
+    background: #fff8f6 !important;
+    font-weight: 700 !important;
+}
+
+#hil_selection textarea:not(:disabled) {
+    background: #fff8f6 !important;
+    font-weight: 700 !important;
+}
+
+@media (max-width: 960px) {
+    .app {
+        padding: 8px !important;
+    }
+
+    #main_layout {
+        /* height: calc(100dvh - clamp(72px, 12dvh, 96px)) !important; */
+        /* max-height: calc(100dvh - clamp(72px, 12dvh, 96px)) !important; */
+        overflow-y: auto !important;
+    }
+
+    #left_layout,
+    #right_layout {
+        flex-basis: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow: visible !important;
+    }
+
+    #right_layout {
+        min-height: 420px !important;
+    }
+}
+
+@media (max-height: 720px) and (min-width: 961px) {
+    #title_header_layout {
+        /* margin-bottom: 4px !important; */
+        padding-bottom: 2px !important;
+        padding-top: 2px !important;
+    }
+
+    #title_header span,
+    #title_header label,
+    #title_header h2,
+    #title_header .output-class {
+        font-size: 0.95rem !important;
+        line-height: 1.15 !important;
+    }
+
+    #left_layout {
+        gap: clamp(6px, 1dvh, 10px) !important;
+    }
+
+    #right_layout {
+        min-height: 0 !important;
+    }
+
+    #hil_layout {
+        /* flex-basis: clamp(205px, 30dvh, 235px) !important; */
+        /* min-height: 200px !important; */
+    }
+
+    #hil_guidance p,
+    #hil_guidance ol {
+        font-size: 0.74rem !important;
+        line-height: 1.18 !important;
+    }
+
+    #hil_selection {
+        flex-basis: 66px !important;
+        min-height: 66px !important;
+    }
+
+    #hil_selection textarea {
+        min-height: 49px !important;
+    }
+
+    #example_layout {
+        /* min-height: 90px !important; */
+    }
+
+    #thoughts_panel {
+        max-height: 52px !important;
+    }
+
+    #thoughts_popup {
+        max-height: calc(100dvh - 24px) !important;
+    }
+
+    #thoughts_popup_message textarea {
+        height: min(60dvh, 520px) !important;
+        max-height: min(60dvh, 520px) !important;
+        min-height: min(240px, 48dvh) !important;
+    }
+}
+
+@media (max-height: 640px) and (min-width: 961px) {
+    #hil_layout {
+        /* flex-basis: 200px !important; */
+        /* min-height: 195px !important; */
+    }
+
+    #hil_selection {
+        flex-basis: 58px !important;
+        min-height: 58px !important;
+    }
+
+    #hil_selection textarea {
+        min-height: 41px !important;
+    }
+
+    #example_layout {
+        /* min-height: 70px !important; */
+    }
+
+    #thoughts_panel {
+        max-height: 46px !important;
+    }
+
+    #thoughts_popup_message textarea {
+        height: min(54dvh, 420px) !important;
+        max-height: min(54dvh, 420px) !important;
+        min-height: min(190px, 44dvh) !important;
+    }
+}

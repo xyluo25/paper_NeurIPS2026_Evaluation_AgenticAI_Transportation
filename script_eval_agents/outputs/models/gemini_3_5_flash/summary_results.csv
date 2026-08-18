@@ -1,0 +1,2 @@
+system_id,system,model_id,provider,api_key_name,api_ready,end_to_end_success_rate,valid_artifact_rate,domain_validity_score,simulation_run_rate,mean_geh,geh_lt5_rate,tool_success_rate,hil_recall,hil_precision,robust_completion_rate,human_corrections,avg_time_min
+agentic_model_gemini_3_5_flash,Agentic RealTwin (gemini-3.5-flash),gemini-3.5-flash,gemini,GEMINI_API_KEY,0,1.0,0.8159,0.8187,0.8235,2.349,1.0,0.9,1.0,0.9157,1.0,2.03,15.17

@@ -1,0 +1,20 @@
+system_id,system,model_id,provider,api_key_name,api_ready,end_to_end_success_rate,valid_artifact_rate,domain_validity_score,simulation_run_rate,mean_geh,geh_lt5_rate,tool_success_rate,hil_recall,hil_precision,robust_completion_rate,human_corrections,avg_time_min
+manual_expert,Manual expert,,,,,1.0,0.8806,0.889,0.9412,1.3802,1.0,,1.0,0.96,1.0,1.26,50.6
+script_only,Script-only,,,,,0.625,0.6756,0.664,0.5294,4.336,0.6389,,0.25,0.55,0.0,3.71,15.98
+single_llm,Single LLM,,,,,0.0,0.4756,0.484,0.5294,6.8451,0.287,0.0375,0.0,0.0,0.0,5.61,10.81
+rag_assistant,RAG assistant,,,,,0.15,0.6016,0.63,0.4706,5.1284,0.5278,0.2667,0.0,0.0,0.0,4.16,13.37
+agentic_realtwin,Agentic RealTwin + HIL,,,,,1.0,0.8316,0.83,0.8824,2.4749,1.0,0.9083,1.0,0.9157,1.0,2.17,15.29
+agentic_model_claude_fable_5,Agentic RealTwin (claude-fable-5),claude-fable-5,claude,CLAUDE_API_KEY,0,0.975,0.8163,0.8191,0.8824,2.2469,1.0,0.9125,1.0,0.9157,0.9333,1.99,15.63
+agentic_model_claude_mythos_5,Agentic RealTwin (claude-mythos-5),claude-mythos-5,claude,CLAUDE_API_KEY,0,0.975,0.83,0.8329,0.8235,2.222,1.0,0.9417,1.0,0.9157,0.9333,1.96,15.51
+agentic_model_claude_opus_4_8,Agentic RealTwin (claude-opus-4-8),claude-opus-4-8,claude,CLAUDE_API_KEY,0,1.0,0.8371,0.8401,0.8824,2.1331,1.0,0.9375,1.0,0.9157,1.0,1.93,15.39
+agentic_model_gemini_3_5_flash,Agentic RealTwin (gemini-3.5-flash),gemini-3.5-flash,gemini,GEMINI_API_KEY,0,1.0,0.8159,0.8187,0.8235,2.349,1.0,0.9,1.0,0.9157,1.0,2.03,15.17
+agentic_model_deepseek_v4_pro,Agentic RealTwin (deepseek-v4-pro),deepseek-v4-pro,ollama,OLLAMA_API_KEY,0,0.975,0.8167,0.8193,0.8235,2.3207,1.0,0.9125,1.0,0.9157,0.9333,2.07,15.73
+agentic_model_gemma4,Agentic RealTwin (gemma4),gemma4,ollama,OLLAMA_API_KEY,0,0.95,0.8154,0.8178,0.8235,2.5242,0.9907,0.85,1.0,0.9157,0.8667,2.13,16.57
+agentic_model_glm_5,Agentic RealTwin (glm-5),glm-5,ollama,OLLAMA_API_KEY,0,1.0,0.8199,0.8224,0.8235,2.3263,1.0,0.9083,1.0,0.9157,1.0,2.1,15.99
+agentic_model_gpt_oss,Agentic RealTwin (gpt-oss),gpt-oss,ollama,OLLAMA_API_KEY,0,0.925,0.8113,0.8137,0.7647,2.5602,1.0,0.85,1.0,0.9157,0.8,2.14,15.93
+agentic_model_kimi_k2_6,Agentic RealTwin (kimi-k2.6),kimi-k2.6,ollama,OLLAMA_API_KEY,0,0.975,0.8143,0.8168,0.7059,2.4012,1.0,0.9708,1.0,0.9157,0.9333,2.07,16.02
+agentic_model_ministral_3,Agentic RealTwin (ministral-3),ministral-3,ollama,OLLAMA_API_KEY,0,0.95,0.8001,0.8023,0.7647,2.6342,1.0,0.8042,1.0,0.9157,0.8667,2.23,16.47
+agentic_model_mnimax_m3,Agentic RealTwin (mnimax-m3),mnimax-m3,ollama,OLLAMA_API_KEY,0,0.925,0.8048,0.8072,0.7059,2.5058,1.0,0.8417,1.0,0.9157,0.8,2.16,16.31
+agentic_model_nemotron_3_ultra,Agentic RealTwin (nemotron-3-ultra),nemotron-3-ultra,ollama,OLLAMA_API_KEY,0,0.975,0.8238,0.8265,0.7647,2.2952,1.0,0.9792,1.0,0.9157,0.9333,2.01,16.24
+agentic_model_qwen3_5,Agentic RealTwin (qwen3.5),qwen3.5,ollama,OLLAMA_API_KEY,0,0.975,0.8078,0.8104,0.6471,2.5728,0.9815,0.8417,1.0,0.9157,0.9333,2.09,16.15
+agentic_model_gpt_5_5,Agentic RealTwin (gpt-5.5),gpt-5.5,openai,OPENAI_KEY,1,1.0,0.8383,0.8416,0.9412,2.1639,1.0,0.9542,1.0,0.9157,1.0,1.82,14.85

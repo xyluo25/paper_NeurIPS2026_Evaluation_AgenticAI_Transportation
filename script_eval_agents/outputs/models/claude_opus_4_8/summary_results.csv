@@ -1,0 +1,2 @@
+system_id,system,model_id,provider,api_key_name,api_ready,end_to_end_success_rate,valid_artifact_rate,domain_validity_score,simulation_run_rate,mean_geh,geh_lt5_rate,tool_success_rate,hil_recall,hil_precision,robust_completion_rate,human_corrections,avg_time_min
+agentic_model_claude_opus_4_8,Agentic RealTwin (claude-opus-4-8),claude-opus-4-8,claude,CLAUDE_API_KEY,0,1.0,0.8371,0.8401,0.8824,2.1331,1.0,0.9375,1.0,0.9157,1.0,1.93,15.39

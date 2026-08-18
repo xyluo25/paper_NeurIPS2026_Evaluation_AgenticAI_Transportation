@@ -1,0 +1,2 @@
+system_id,system,model_id,provider,api_key_name,api_ready,end_to_end_success_rate,valid_artifact_rate,domain_validity_score,simulation_run_rate,mean_geh,geh_lt5_rate,tool_success_rate,hil_recall,hil_precision,robust_completion_rate,human_corrections,avg_time_min
+agentic_model_gpt_oss,Agentic RealTwin (gpt-oss),gpt-oss,ollama,OLLAMA_API_KEY,0,0.925,0.8113,0.8137,0.7647,2.5602,1.0,0.85,1.0,0.9157,0.8,2.14,15.93

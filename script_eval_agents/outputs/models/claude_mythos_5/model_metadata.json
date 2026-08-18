@@ -1,0 +1,17 @@
+{
+  "api_ready": 0,
+  "model_id": "claude-mythos-5",
+  "provider": "claude",
+  "provider_status": {
+    "api_key_name": "CLAUDE_API_KEY",
+    "api_key_present": 0,
+    "api_ready": 0,
+    "endpoint": "https://api.anthropic.com",
+    "model_id": "claude-mythos-5",
+    "provider": "claude",
+    "sdk_available": 1,
+    "selected_order": 2,
+    "system_id": "agentic_model_claude_mythos_5"
+  },
+  "system_id": "agentic_model_claude_mythos_5"
+}

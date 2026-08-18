@@ -1,0 +1,41 @@
+deepagents>=0.5.3
+deepeval
+pyarrow
+keplergl==0.3.7
+# KeplerGL 0.3.7 imports pkg_resources, which was removed in Setuptools 81.
+setuptools<81
+folium>=0.20.0
+gradio>=6.22.0
+grid2demand>=1.0.6
+ipython>=8.12.3
+langchain_chroma>=1.1.0
+langchain_community>=0.4.2
+langchain_core>=1.5.3
+langchain_huggingface>=1.2.2
+langchain_ollama>=1.1.0
+langchain_openai>=1.4.2
+langchain_text_splitters>=1.1.2
+langgraph>=1.2.10
+loguru>=0.7.3
+matplotlib>=3.11.1
+networkx>=3.6.1
+# NumPy 2.5 requires Python 3.12, while the stable dependency intersection uses 3.11.
+numpy>=2.4,<2.5
+openpyxl>=3.1.5
+osm2gmns
+osmnx>=2.1.1
+pandas>=3.0.5
+plot4gmns>=0.1.4
+pyproj>=3.7.0
+pyufunc>=0.5.1
+PyYAML>=6.0.3
+Requests>=2.34.2
+rich>=15.0.0
+sentence_transformers>=5.7.0
+Shapely>=2.1.2
+sumolib>=1.27.1
+tqdm>=4.67.1
+traci>=1.27.1
+transformers>=5.14.1
+# Mealpy 3.0.3 caps NumPy at 1.26.0; 3.0.2 supports NumPy 2 and matches our patch.
+mealpy==3.0.2

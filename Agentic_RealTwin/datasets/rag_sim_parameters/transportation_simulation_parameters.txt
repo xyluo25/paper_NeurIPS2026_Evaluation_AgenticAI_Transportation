@@ -1,0 +1,699 @@
+—| + AutomaticZoom
+
+Maximum deceleration: -13.12 ft/s2 -9.84 ft/s2
+-1 ft/s2 per distance: 200 ft 200 ft
+Accepted deceleration: -3.28 ft/s2 -1.64 ft/s2
+Waiting time before diffusion: 60 s
+
+|. headway (front/rear): 1.64 ft
+To slower lane if collision time above: 0 s
+Safety distance reduction factor: 0.6
+Maximum deceleration for cooperative braking: -9.84 ft/s2
+Overtake reduced speed areas: D*
+
+SUGGESTED RANGES
+
+Maximum deceleration:-15 to -12 ft/s2 -12 to -8 ft/s2
+-1 ft/s2 per distance: 150 to 250 ft 150 to 250 ft
+Accepted deceleration: -2.5 to -4 ft/s2. -1.5to-2.5 ft/s2
+Waiting time before diffusion: 200 s
+
+jin. headway (front/rear): 1.5to2 ft
+To slower lane if collision time above: 0to0.5 s
+Safety distance reduction factor: 0.25 to 1.00
+Maximum deceleration for cooperative braking: -8to-15 ft/s2
+Overtake reduced speed areas: D*
+
+* Leave box un-checked
+
+Table 3 - Suggested Lane Change Parameters
+
+
+—| + Automatic Zoom v
+
+Suggested Range
+Default | unit Basic Segment one
+cco | standstill Distance 492 Ft 45-55 > 4.92
+cca | Headway Time 03 s 0.85 - 1.05 0.90 1.50
+cc2* | Following variation peer ft 656-2297 | 13.12-39.37
+cc3__| Threshold for Entering Following 8 Use default
+cca _| Negative Following Threshold -0.35 Use default
+cc5__| Positive Following Threshold 0.35 Use default
+cc6 _| Speed Dependency of Oscillation rev] Use default
+cc7 _| Oscillation Acceleration a2 | f/s2 Use default
+cc | standstill Acceleration sas | fy/s2 Use default
+cc9__| Acceleration at 50 mph 492 | fe/s2 Use default
+
+Adjustments to CC2 default should only be made after CCO and Ci parameters have been adjusted and it
+concluded those adjustments do not accurately replicate field conditions.
+Table 2 - Wiedemann 99 Car Following Parameters (U.S. Customary Unit)
+
+
+
+—| + Automatic Zoom v
+
+include the field-collected travel time data and considered to be well calibrated. Table 50 shows
+the default and GA-optimized parameter sets.
+
+Table 50. Parameter Sets for Arlington Network with VISSIM
+
+VISSIM Default Calibrated
+Desired Speed Distribution (Main/Min), mph 40 45
+Desired Speed Distribution (Main/Var), mph 40 35
+Desired Speed Distribution (Arterial/Min), mph 30 20
+Desired Speed Distribution (Arterial/Var), mph 20 25
+Desired Speed Distribution (Ramp Entry/Min), mph 30 20
+Desired Speed Distribution (Ramp Entry/Var), mph 20 15
+Max. Look Ahead Distance, meter 250.00 253.03
+‘Number of Observed Preceding Vehicles, veh 2 2
+CCO, meter 1.50 3.85
+CCI, see 0.90 098
+CC2, meter 4.00 6.82
+CC3, set -8.00 -939
+CC4, meter/see -0.35 0.1
+CCS, meter/see 035 Ol
+CC6, 107 rad/s 11.44 20.71
+C7, mis? 0.25 0.96
+C8, m/s? 3.50 333
+CC9, m/s? 1.50 1.94
+Max. Deceleration, m/s” 4.00 3.63
+Reduction Rate 200.00 55.15
+Accepted Deceleration, m/s” -1.00 -1.98
+Waiting Time Before Diffusion, sec 60.00 46.06
+‘Min. Headway, meter 0.50 0.27
+
+
+
+—| + Automatic Zoom v
+
+The following is the initial set of parameters and acceptable ranges used in the calibration
+process:
+
+1) Desired Speed Distribution 1 (mph / Mainline / Minimum): 40 ~ 50
+
+2) Desired Speed Distribution 1 (mph / Mainline / Variance): 15 ~ 40
+
+3) Desired Speed Distribution 2 (mph / Ramp / Minimum): 20 ~ 35
+
+4) Desired Speed Distribution 2 (mph / Ramp / Variance): 15 ~ 30
+
+5) Desired Speed Distribution 3 (mph / Ramp Entry / Minimum): 10 ~ 30
+6) Desired Speed Distribution 3 (mph / Ramp Entry / Variance): 10 ~ 25
+7) Maximum Look Ahead Distance (m): 150 ~ 350
+
+8) Number of Observed Preceding Vehicles (veh): 1 ~ 4
+
+9) CCO—average standstill distance (meter): 0.5 ~ 7.0
+
+10) CC1 — headway at a certain speed (second): 0.5 ~ 1.5
+
+11) CC2 — longitudinal oscillation (meter): 0.0 ~ 15.0
+
+12) C3 ~ start of the deceleration process (second): -30.0 ~ 0
+
+13) CC4— minimal closing Av (m/s): -1.0 ~ 0.0
+
+14) CCS5 — minimal opening Av (m/s): 0.0 ~ 1.0
+
+15)CcCc6— +4v/dk (10% rad/s): 0.0 ~ 25.0
+
+16) CC7 — car following activities +5 (m/s2): 0.0 ~ 1.0
+
+147
+
+17) CC8 ~ acceleration behavior when starting (m/s2): 1.0 ~ 8.0
+18) CC9 — acceleration behavior at v ~ 80 km/h (m/s2): 0.5 ~ 3.0
+19) Maximum Deceleration (m/s’): -5.00 ~ -1.00
+
+20) Reduction Rate (meter per Im/s
+21) Accepted Deceleration (m/s’): -3.0 ~ -0.2
+
+22) Waiting Time Before Diffusion (second): 30 ~ 60
+23) Minimum Headway (m): 0.1 ~ 1.0
+
+
+
+—| + Automatic Zoom v
+
+Table 49. Parameter Sets for Arlington Network with CORSIM
+
+CORSIM Default Calibrated
+Desired free flow speed (Main), mph 6 @
+Car following sensitivity, % 100 100
+1.25, 1.15, 1.05,0.95,0.85, | 1.30, 1.20, 1.10, 1.00, 0.90,
+‘New car-following sensitivity factor, see 0.75, 0.65, 0.55, 0.45, 0.35 0.80, 0.70, 0.60, 0.50, 0.40
+‘New value for Pitt car following constant, ft 10 4
+Time to complete a lane change maneuver, sec 2 13
+‘Mandatory lane change gap acceptance 3 >
+parameter
+% of drivers desiring to yield right-of-way to x 30
+lane changing vehicles attempting to merge, %
+“Multiplier for desire to make a discretionary 05 03
+lane change :
+“Advantage threshold for discretionary lane
+change 04 07
+Leader's maximum deceleration perceived by
+follower, 0.1 ft/sec’ 15 18
+Free-Flow Speed Adjustment (for each driver | 88, 91, 94,97, 99,101, 103, | 82, 86,90, 94,98, 102, 106,
+type), % 106, 109, 102 110, 114, 118
+
+
+
+—| + Automatic Zoom v
+
+a ee
+
+The initial parameters with acceptable ranges and distribution alternatives are listed as follows:
+
+140
+
+1) Link mean free flow speed 1 (mph): 45-70
+2) Car Following Sensitivity:
+Default (1): 1.25, 1.15, 1.05, 0.95, 0.85, 0.75, 0.65, 0.55, 0.45, 0.35
+Small! (2): 1.15, 1.05, 0.95, 0.85, 0.75, 0.65, 0.55, 0.45, 0.35, 0.25
+Largel (3): 1.35, 1.25, 1.15, 1.05, 0.95, 0.85, 0.75, 0.65, 0.55, 0.45
+3) Pitt car following constant (feet): 3-10
+4) Lag acceleration (second): 0.3 — 2.0
+5) Lag deceleration (second): 0.3 — 1.5
+6) Time to complete a lane-change maneuver (second): 1 — 4
+7) Gap acceptance parameter: 1 — 6
+8) Percent of drivers desiring to yield to merging vehicles (%): 5 — 30
+9) Multiplier for desire to make a discretionary lane change: 0.1 — 0.9
+10) Advantage threshold for discretionary lane change: 0.1 — 0.9
+11) Minimum separation for generation of vehicles (sec): 0.2 — 2.0
+12) Distribution of free flow speed by driver type
+Default: 88, 91, 94, 97, 99, 101, 103, 106, 109, 112
+Narrow (0.8): 90, 93, 95, 98, 99, 101, 102, 105, 107, 110
+Wide (1.2): 86, 89, 93, 96, 99, 101, 104, 107, 111, 114
+
+
+
+—| + Automatic Zoom v
+
+Table 45. Parameter Sets for Covington Network with VISSIM
+
+Covington-VISSIM. Default GA-based
+Speed Index 1 62.5-67.5 mph 65.0-75.0 mph
+Speed Index 2 52.5-57.5 mph 52.5-62.5 mph
+Speed Index 3 42.5-47.5 mph 47.5-52.5 mph
+Simulation Resolution 5 9
+‘Waiting Time Before Diffusion (sec) 60.00 68.2
+Min. Headway (front/rear) 0.50 0.72
+Max. Deceleration -3.00 -1.04
+-1m/s"2 per Distance 50.00 60
+Accepted Deceleration -1.00 -0.7
+Observed Vehicles 2 3
+Look Ahead Distance (max) 250.00 257.58
+cco 1.50 1.74
+cel 0.90 277
+cc2 4.00 4.09
+cc3 -8.00 0.91
+cc4 -0.35 -0.97
+ces 035 0.86
+cee 11.44 10.7
+cc7 0.25 0.67
+ccs 3.50 2.06
+cco 1.50 277
+Ave. Travel Time (sec) 358.27 332.767
+
+
+
+—| + Automatic Zoom v
+
+The following is the initial set of parameters and acceptable ranges used in the calibration
+process:
+
+1) Speed Index 1: 1 ~ 6
+
+(65.0~70.0, 62.5~72.5, 60.0~75, 67.5~72.5, 65.0~75.0, 62.5~77.5 mph)
+2) Speed Index 2: 1 ~ 6
+
+(55.0~60.0, 52.5~62.5, 50.0~65.0, 57.5~62.5, 55.0~65.0, 52.5~67.5 mph)
+3) Speed Index 3: 1~6
+
+(45.0~50.0, 42.5~52.5, 40.0~55.0, 47.5~52.5, 45.0~55.0, 42.5~57.5 mph)
+4) Simulation Resolution: 1 ~ 9
+5) Waiting time before diffusion (second): 30 ~ 90
+6) Min. Headway (front/rear, meter): 0.1 ~ 0.9
+7) Max. Deceleration (m/s”): -5.00 ~ -1.00
+
+125
+
+8) Reduction Rate (meter per 1m/s’): 20 ~ 80
+
+9) Accepted Deceleration (m/s’): -3.0 ~ -0.2
+
+10) Number of observed preceding vehicles: 1 ~ 5
+
+11) Maximum look ahead distance (meter): 200 ~ 300
+
+12) CCO — average standstill distance (meter): 1.0 ~ 2.0
+
+13) CC1 — headway at a certain speed (second): 0.5 ~ 3.0
+
+14) CC2 — longitudinal oscillation (meter): 0.0 ~ 15.0
+
+15) CC3 ~ start of the deceleration process (second): -30.0 ~ 0
+16) CC4— minimal closing Av (m/s): -1.0 ~ 0.0
+
+17)CCS5 — minimal opening Av (m/s): 0.0 ~ 1.0
+
+18)cc6— +4v/ak (10-4 rad/s): 0.0 ~ 20.0
+
+19) CC7 —car following activities +5 (m/s2): 0.0 ~ 1.0
+
+20) CC8 — acceleration behavior when starting (m/s2): 1.0 ~ 8.0
+21) CC9 — acceleration behavior at v ~ 80 km/h (m/s2): 0.5 ~ 3.0
+
+
+
+—| + Automatic Zoom v
+
+Table 43. Two Parameter Sets for Covington Network with CORSIM
+
+‘Covington -CORSIM Default_| GA-Final
+Link mean free flow speed 1 (mph) 6 66
+Link mean free flow speed 2 (mph) 55 ST
+Link mean free flow speed 3 (mph) 45 51
+Car following sensitivity Index 1 1
+Pitt car following constant (ft) 10 3
+Lag acceleration (sec) 03 12
+Lag deceleration (sec) 03 0s
+Time to complete a lane-change maneuver (sec) 2.0 1.0
+Gap acceptance parameter 3 4
+Percent of drivers desiring to yield to merging vehicles (%) 20 20
+“Multiplier for desire to make a discretionary lane change 05 04
+‘Advantage threshold for discretionary lane change 04 08
+‘Minimum separation for generation of vehicles (sec) 16 13
+Distribution of free flow speed by driver type Index 1 2
+‘Ave. Travel Time (sec) 372.23 331.67
+
+
+— +  AutomaticZoom =v
+The initial parameters with acceptable ranges and distribution alternatives are listed as follows:
+
+1) Link mean free flow speed 1 (mph): 65-70
+
+2) Link mean free flow speed 2 (mph): 55-60
+
+3) Link mean free flow speed 3 (mph): 45-50
+
+4) Car Following Sensitivity:
+Default (1): 1.25, 1.15, 1.05, 0.95, 0.85, 0.75, 0.65, 0.55, 0.45, 0.35
+Small (2): 1.15, 1.05, 0.95, 0.85, 0.75, 0.65, 0.55, 0.45, 0.35, 0.25
+Large! (3): 1.35, 1.25, 1.15, 1.05, 0.95, 0.85, 0.75, 0.65, 0.55, 0.45
+Narrow (4): 1.16, 1.08, 1.00, 0.92, 0.84, 0.76, 0.68, 0.60, 0.52, 0.44
+Wider (5): 1.34, 1.22, 1.10, 0.98, 0.86, 0.74, 0.62, 0.50, 0.38, 0.26
+
+5) Pitt car following constant (feet): 3-10
+
+6) Lag acceleration (second): 0.3 — 2.0
+
+7) Lag deceleration (second): 0.3 - 1.5
+
+8) Time to complete a lane-change maneuver (second): 1 — 4
+
+9) Gap acceptance parameter: 1 — 6
+
+10) Percent of drivers desiring to yield to merging vehicles (%): 5 — 30
+
+11) Multiplier for desire to make a discretionary lane change: 0.1 — 0.9
+
+12) Advantage threshold for discretionary lane change: 0.1 — 0.9
+
+11s
+
+13) Minimum separation for generation of vehicles (sec): 0.2 — 2.0
+14) Distribution of free flow speed by driver type
+Default: 88, 91, 94, 97, 99, 101, 103, 106, 109, 112
+Narrow (0.8): 90, 93, 95, 98, 99, 101, 102, 105, 107, 110
+Wide (1.2): 86, 89, 93, 96, 99, 101, 104, 107, 111, 114
+
+
+Automatic Zoom
+
+-i+
+
+Table 37. Two Calibration Parameter Ranges for Charlottesville Network
+
+Parameters
+Simulation resolution 4
+‘Number of observed preceding vehicles 4
+‘Maximum look ahead distance m 200 | 300 250
+Average standstill distance 10 | 30 25
+Saturation | Additive part of desired safety distance = 25 | 55 45
+Flow Rate | Multiple part of desired safety distance = 35 | 65 55
+‘Waiting time before diffusion sec 30 | 90 55
+Min. headway m os | 15 1.25
+‘Max. deceleration mist 50 | 20 25
+Reduction rate m 50_|_ 150 125
+‘Accepted deceleration m/s” 15 | 05 -0.75
+Min. 30~40, 35~45, |__ 25, 30, 35
+Rte29/Car Var. 40~50, 45~55 10, 15,20
+Min. 30-40, 35~45, |__ 20, 25, 30
+ee Rte29/HV Var. mph 40~50 10, 15.20
+Min. 15-25, 20-30, |__15, 20, 25
+Distribution Ramp/Car Var. 25~35 5, 10, 15
+Min. 15-25, 20-30, |__10, 15, 20
+Ramp/HV Var. 25~35 5,10, 15
+
+
+
+—| + Automatic Zoom v
+
+Following is the list of calibration parameters and each parameter’s initial range:
+2) Simulation resolution (Time step/sim.sec) : 1 ~ 9
+3) Number of preceding vehicles (veh): 1 ~ 6
+4) Maximum look ahead distance (m): 200 ~ 300
+5) Average standstill distance (m): 1 ~ 3
+6) Additive part of desired safety distance: 2.5 ~ 5.5
+7) Multiple part of desired safety distance: 3.5 ~ 6.5
+8) Waiting time before diffusion (sec): 30 ~ 90
+9) Minimum headway (m): 0.5 ~ 1.5
+10) Maximum deceleration (m/s”): -5.0 ~ -2.0
+11) Reduction rate (m): 50 ~ 150
+12) Accepted deceleration (m/s”): -1.5 ~ -0.5
+13) Desired speed distribution (mph)
+
+~ Rte. 29 / Car: 35~45, 40~50, 45~55
+~ Rte. 29 / Heavy Vehicle: 30~40, 35~45, 40~50
+~ Ramps / Car: 15~25, 20~30, 25~35
+~ Ramps / Heavy Vehicle: 15~25, 20~30, 25~35
+
+
+++ Automatic Zoom
+
+Table 27. Two Parameter Sets for Site 15 with VISSIM
+
+SitelS — VISSIM_
+Simulation resolution
+‘Number of observed preceding vehicles
+‘Maximum look ahead distance (meter)
+‘Average standstill distance (meter)
+‘Additive part of desired safety distance
+“Multiple part of desired safety distance
+Priority rules — minimum headway (meter)
+Priority rules —_minimum gap time (second)
+
+Desired speed distribution (mph)
+
+Default
+
+40
+Car: 27.5-42.5
+
+Ave. travel time (Second)
+
+
+
+—| + Automatic Zoom v
+
+Based on the speed and saturation flow rate conditions, the parameter set is modified as follows:
+1) Simulation resolution (Time steps/Sim. Sec): 1 - 9
+2) Number of observed preceding vehicles: 1 — 4
+3) Maximum look ahead distance (meter): 200 — 300
+4) Average standstill distance (meter): 1 — 5
+5) Saturation flow rate
+* Additive part of desired safety distance: 1.0 — 5.0
+© Multiple part of desired safety distance: 1.0 - 6.0
+6) Priority rules — minimum headway (meter): 5 — 20
+7) Priority rules — minimum gap time (second): 3 — 6
+8) Desired speed distribution (mph): 30-40, 32.5-37.5, 27.5-42.5
+
+With the new parameter ranges, another 200 cases were generated using the Latin Hypercube
+Design method. The new simulated distribution is shown in Figure 47, which covers the field
+data and indicates that the new parameter ranges were able to capture the field condition. The
+parameter set with the best performance was selected as the LHD-based parameters in the
+following evaluation:
+
+
+—| + Automatic Zoom v
+Table 23. Two Parameter Sets for Site 15 with CORSIM
+
+Sitel5-CORSIM Default | Calibrated
+Link mean free flow speed (mph) 45 30
+‘Mean queue discharge headway (sec) 18 28
+‘Mean start-up lost time (sec) 2.0 28
+Left tum jumper probability (%) 38 21
+Left tum speed (ft/sec) 22 19
+Right tum speed (ft/sec) 3 23
+Left tum lagging within 2 seconds (%) 50 47
+Left tum lagging within 2-4 seconds (%) 15 12
+
+‘Amber interval response (fpss) Index 1
+Gap distribution for left turns (sec) Index 1
+
+Gap distribution for right tums (sec) Index 1
+Distribution of free flow speed by driver type (%) Index 1
+1
+
+1
+
+Start-up lost time distribution (%) Index.
+
+headway distribution (%) Index
+‘Avg. Travel Time (sec) 28.2 58.4
+
+BB }+\ra]ro]no fee] no
+
+
+
+—| + Automatic Zoom v
+
+Table 9. Calibration Parameter List 1—CORSIM
+
+Parameter
+Range Default
+Record
+Description ‘Columns
+Type
+‘Mean Value of Start-up lost time 57-60 0~99(0.1sec) 20
+‘Mean queue discharge headway u 61~64 14-99(0.1sec) 18
+Desired free-flow speed 65-68 0, 10~65(mi/h) 30
+‘Mean Start-up delay 19~20 (0~60(0.1sec) 10
+Desired free-flow speed 20 21-22 (0~70(mi/h) 65
+Car following sensitivity multiplier 69-72 1~1000(%) 100
+‘New car-following sensitivity factor (each
+river type) 68 1~40 0~9999(0.01s) | N/A
+New value for Pitt car following constant 43~44 3~10(ft) 10
+Time to complete a lane change maneuver 1-4 '0~9999(0.1sec) 20
+Mandatory lane change gap acceptance pb 1-6 3
+f drivers des 1d right-of
+% of drivers desiring to yield right-of-way to 7 7
+Tane changing vehicles attempting to 13-16 0~100(%) 20
+Multiplier for desire to make a discretionary
+Tane change 10 19-20 1~10(0.1unit) 5
+Advantage threshold for discretionary lane 23024 1~10(0.1unit) 4
+change
+‘Maximum non-emergency freeway 0~9999
+deceleration (each vehicle type) 25-60 (0.1 fi/sec”” 80
+Trader's maximum deceleration perceived by oes | s20(nee) | 15
+follower
+“Minimum Deceleration for lane change 13-16 1~10(ft/sec”) 5
+Difference in max. and min. acceptable 2
+deceleration for mandatory lane change 17-20 5~15(fu’sec") 10
+Difference in max and min. acceptable 2
+deceleration for discretionary lane change 21-24 | 5-15(fisec’) 5
+Deceleration rate of leading vehicle 25-28 | 10~15(fsec) | 12
+Deceleration rate of following vehicle 29-32 10~15(ft/sec”) 2
+Driver factor used to compute driver 81 33036 15-50 05
+agaressiveness
+% of drivers who cooperative with lane outs 10-10%) 0
+changer
+Headway below which all drivers will
+to 49.52 1~30(0.1sec) 20
+Headway above which no drivers will attempt
+to , 53-56 | 30~100(0.1sec) 50
+‘Mean longitudinal distance over which drivers
+decide to perform one lane 57-60 50~2500(f) 300
+
+
+TABLET. —CALIBRATIONRESULTS
+
+Krauss mM
+25 20
+10 os
+055 na
+115 | 115
+
+025 02
+18 18
+
+0.411 0.429) | 0.421 (0.472)
+
+
+—| + Automatic Zoom v
+
+Table 2. Parameters in the calibration process.
+
+Short Name Long Name Description Unit Default. Min Max
+‘A vehicle's maximum forward
+. vision allows it to respond to other
+LookAheadDistMax Vehicles ahead or to ite side (inside m 250 100 400
+the same link).
+‘AccDecelOwn ‘Thelow tanger deceleration, ns ™/8? 1 10 0
+Appl. Sci. 2025, 15, 1496 90f 24
+Table 2. Cont.
+Short Name Long Name Description Unit Default. Min Max
+Maximum " a a
+‘CoopDecel cooperative Cooperative braking during m/s 3 10 0
+perative ‘maximum deceleration.
+Look back The farthest a car can see behind it
+LookBackDistMax distance to respond to other cars behind it =m 150 50 250
+(maximum) (inside the same link).
+Maximum lane-changing
+Maximum deceleration according to the
+MaxDeceOwm deceleration _ designated routes for the overtaking ™/* 4 10 0.01
+vehicle.
+Within its maximum lookahead
+Number of distance, the smallest number of
+- downstream cars and relevant
+NuminteractObj interaction network objects (signal heads, - 2 1 0
+objects limited speed zones, etc.) to which a
+vehicle responds.
+Number of ‘The maximum number of cars
+NuminteractVeh interaction ae eek ober 9 1 99
+
+vehicles not included in this.
+
+(1) The trailing vehicle's safety
+distance on the new lane, which is
+Safety distance used to decide whether to perform a
+SafDistFactLnChg reduction factor _ lane change; (2) the lane changer’s - 06 0 1
+(lane change) _ safety distance; and (3) the distance
+to the slower, preceding lane
+changer.
+
+—| + Automatic Zoom v
+
+changer.
+Wove00* Siandstll “The ideal spacing between WOCRIS 15 05 15
+istance ‘ata stop.
+In addition to the standstill distance,
+. Gap time ‘a driver's desired gap time in
+Wo%ccl distribution seconds, which is calculated from s oe os 0
+the time distribution.
+‘The maximum distance that a driver
+following another car will
+W992 * consciously go beyond the preferred m 4 0 15
+safely distance before purposefully
+approaching.
+‘At the beginning of the deceleration
+‘Threshold for process, the time in seconds until
+W99ec3* entering the vehicle reaches the upper limits 8 30 0
+“BrakeBX’ —_of the following distance to a slower
+leading, vehicle.
+‘The threshold for the relative speed
+. Negative speed during the subsequent process as
+W99cc4 difference compared toa slower leading m/s 0.35 1 °
+vehicle.
+‘The threshold for the relative speed
+. Positive speed during the subsequent process
+Wiiec5' difference. when compared toa quicker leading 5 035 7 1
+vehicle.
+Distance Distance’s impact on relative speed
+W906 * dependency of thresholds during the subsequent Rad/s ‘11.44 0 25
+oscillation procedure.
+Omillation Minimal rate of acceleration or
+W997 * Qscillation deceleration during the subsequent — m/s? 0.25 0 1
+oscillation process.
+Wovece* ‘Acceleration from Acceleration when beginningata 35 1 3
+
+standstill complete stop.
+
+
+
+—| + Automatic Zoom v
+
+Table 2. Cont.
+Short Name Long Name Description Unit Default. Min Max
+W999 * Acceleration at 0 80 km/h acceleration. m/s? 15 05 3
+Length of The length of the reduced speed
+LenRedSpeed reduced speed _ area in the dummy links at the end m - 0 888
+area of the network.
+Desire speed in
+DSRedSpeed reduced speed Desire speed in reduced speed area. km/h - 5 7
+area
+Volume of The number of vehicles that merge
+VolinterFlow interrupting into the dummy link to interrupt the vehicle/h - 0 2000
+flow main flow.
+Relative flow of
+RelFlowExit exit at the The Percentage of vehicles that exit oy - 0 0s
+neni network at the dummy lin
+Lane change _where cars whose routes or paths
+LnChgDist distance before _ctoss it attempt to select the lane m 200 100 2000
+connectors that will get them there without
+changing lanes.
+DesSpeed Desire speed Desire speed of vehicles inthe km/h 90 70 120
+
+
+
+— | + AutomaticZoom v7
+
+‘Table 6: Initially Selected Parameter Ranges
+
+Initial Range | Final Range |
+
+| Desired Speed Distribution Range 40.0-10.0 mph__| +0.5-10.0 mph
+| Look-ahead distance min 0-900 ft 0-300 ft
+| Look-ahead distance max 500-1000 |_500-1200 ft
+‘Number of observed vehicles 28
+Average standstill distance, ax 020-200 ft
+‘Additive part of safety distance, DXauy 0.0:8.0
+
+| Multiplicative part of safety distance, bXwau
+‘Maximum Deceleration (own)
+
+im (railing)
+Accepted Deceleration (own) 6.0 --0.33 fs?
+Accepted Deceleration (trailing) 6.0 - 0.33 tus?
+| Reduction rate (own) 50-300 50-200
+| Reduction rate (trailing) 50-300 50-200
+| Waiting t 20-80 sec
+[as Min. headway (Iront/ear) 1.64.25.00 1.
+16. | Safety distance reduction factor 0.0-1.0
+17 ‘Max. deceleration for cooperative braking 35.0 --3.0 fs?
+18 | Reduction factor for changing lanes before a s 03.09
+19 | Start upstream of stop line 200-600 ft
+wns stop line 200-600 ft
+Emergency slop distance 656-30.0 ft
+22 | Lane change distance 300-1000 1 500-1000 ft
+
+23 | Random seed value 1.999
+
+
+
+—| + Automatic Zoom v
+
+Sensors 2024, 24, 4393 13 0f 20
+
+Micro Model: The Micro Model also demonstrates high accuracy, with the lowest
+accuracy being 99.5% at the 50th Street and Quaker Avenue intersection and the
+highest accuracy of 99.9% at multiple intersections.
+
+Table 6. Observed versus simulated traffic volumes for the study intersections.
+
+Observed Simulated Volume (veh/h)
+SIN Intersection Name Volume from Default Accuracy Macro Accuracy Micro Accuracy
+LiDAR (vel/h) — Model % Model % Model %
+1 34th Street and Indiana Avenue 5727 5689 99.3, ‘5717 99.8 5721 99.9
+2 82nd Street and Milwaukee Avenue 5967 5804 97.3 (5962 9.9 5962 9.9
+3 82nd Street and Slide Road 5300 5286 99.7 ‘5291 99.8 ‘5288 99.8
+4 50th Street and Avenue Q. 4459 4309 96.6 4449 99.8 4455 99.9
+5 50th Street and Quaker Avenue 6080 5776 95.0 6055 99.6 6050. 99.5
+6 4th Street and Frankford Avenue 3500 3206 91.6 3475 99.3, (3489 99.7
+Similarly, the study evaluates the accuracy of mean speed simulations at various
+intersections using Default Model, Macro Model, and Micro Model. Observed mean speeds
+(mi/h) are compared with simulated speeds, and the accuracy percentage is calculated for
+each model. Results of observed mean speed and simulated mean speeds are presented in
+Table 7.
+Table 7. Observed mean speeds versus simulated mean speeds.
+Observed Simulated Speed (mi/h)
+SIN Intersection Name Mean Speed from Default Accuracy Macro Accuracy Micro Accuracy
+LiDAR (mi/h) Model % Model % Model %
+1 34th Street and Indiana Avenue 20.88 ‘14.45 69.2 1754 84.00 19.72 944
+2 82nd Street and raukee Avenue 22.81 16.95 743 19.63 86.1 22.05 96.7,
+3 82nd Street and Slide Road 21.69 15.78 728 17.04 78.6 21.13 O74
+4 50th Street and Avenue Q. 22.95 ‘18.46 804 18.80, 819 20.15 87.8
+5 50th Street and Quaker Avenue 22.53 19.94 88.5 20.80, 92.3 21.38 94.9
+6 4th Street and Frankford Avenue 22.80 17.85 78.3 18.22 799 20.83 a4

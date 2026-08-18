@@ -1,0 +1,14 @@
+gpt-5.5
+claude-fable-5
+claude-mythos-5
+claude-opus-4-8
+gemini-3.5-flash
+nemotron-3-ultra
+mnimax-m3
+gemma4
+qwen3.5
+glm-5
+deepseek-v4-pro
+kimi-k2.6
+gpt-oss
+ministral-3

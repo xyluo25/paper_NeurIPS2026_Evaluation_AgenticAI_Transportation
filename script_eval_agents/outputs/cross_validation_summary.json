@@ -1,0 +1,36 @@
+{
+  "best_model": {
+    "api_ready": 1,
+    "avg_time_min": 14.85,
+    "cross_validation_score": 0.9212,
+    "domain_validity_score": 0.8416,
+    "end_to_end_success_rate": 1.0,
+    "human_corrections": 1.82,
+    "mean_geh": 2.1639,
+    "model_id": "gpt-5.5",
+    "provider": "openai",
+    "rank": 1,
+    "robust_completion_rate": 1.0,
+    "simulation_run_rate": 0.9412,
+    "system_id": "agentic_model_gpt_5_5",
+    "tool_success_rate": 0.9542,
+    "valid_artifact_rate": 0.8383
+  },
+  "llm_config_path": "C:\\Users\\xh8\\ORNL_Work\\github_workspace\\paper_Agentic_RealTwin\\Agentic_RealTwin\\proj_config\\llm_config.yaml",
+  "outputs": {
+    "cross_validation_ranking": "C:\\Users\\xh8\\ORNL_Work\\github_workspace\\paper_Agentic_RealTwin\\script_eval_agents\\outputs\\cross_validation_ranking.csv",
+    "cross_validation_results": "C:\\Users\\xh8\\ORNL_Work\\github_workspace\\paper_Agentic_RealTwin\\script_eval_agents\\outputs\\cross_validation_results.csv",
+    "model_provider_status": "C:\\Users\\xh8\\ORNL_Work\\github_workspace\\paper_Agentic_RealTwin\\script_eval_agents\\outputs\\model_provider_status.csv",
+    "model_summary_results": "C:\\Users\\xh8\\ORNL_Work\\github_workspace\\paper_Agentic_RealTwin\\script_eval_agents\\outputs\\model_summary_results.csv",
+    "model_task_results": "C:\\Users\\xh8\\ORNL_Work\\github_workspace\\paper_Agentic_RealTwin\\script_eval_agents\\outputs\\model_task_results.csv",
+    "per_model_directory": "C:\\Users\\xh8\\ORNL_Work\\github_workspace\\paper_Agentic_RealTwin\\script_eval_agents\\outputs\\models"
+  },
+  "provider_counts": {
+    "claude": 3,
+    "gemini": 1,
+    "ollama": 9,
+    "openai": 1
+  },
+  "script_version": "2026-07-01-agentic-realtwin-v4-40-task-suite",
+  "selected_model_count": 14
+}

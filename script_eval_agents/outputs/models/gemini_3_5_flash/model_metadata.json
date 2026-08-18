@@ -1,0 +1,17 @@
+{
+  "api_ready": 0,
+  "model_id": "gemini-3.5-flash",
+  "provider": "gemini",
+  "provider_status": {
+    "api_key_name": "GEMINI_API_KEY",
+    "api_key_present": 0,
+    "api_ready": 0,
+    "endpoint": "https://generativelanguage.googleapis.com",
+    "model_id": "gemini-3.5-flash",
+    "provider": "gemini",
+    "sdk_available": 1,
+    "selected_order": 4,
+    "system_id": "agentic_model_gemini_3_5_flash"
+  },
+  "system_id": "agentic_model_gemini_3_5_flash"
+}

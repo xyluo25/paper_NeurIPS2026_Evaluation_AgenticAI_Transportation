@@ -1,0 +1,99 @@
+{
+  "case_study_metadata": {
+    "control_files": 2,
+    "example_dir": "Agentic_RealTwin\\datasets\\example2",
+    "has_matchup_table": true,
+    "has_updated_network": true,
+    "network_edges": 18,
+    "network_junctions": 9,
+    "signal_programs": 3,
+    "sumo_output_files": 6,
+    "traffic_files": 7
+  },
+  "deepeval_metrics": [
+    "ToolCorrectnessMetric",
+    "AgenticTaskCompletionMetric"
+  ],
+  "deepeval_version": "4.0.6",
+  "llm_config_path": "Agentic_RealTwin\\proj_config\\llm_config.yaml",
+  "python_major_minor": "3.13",
+  "reproducibility_note": "No live LLM calls, network requests, random seeds, or simulator executions are used in the default benchmark. Selected-model outcomes are deterministic functions of task definitions, source-derived tool registry, provider/API-key readiness, and fixed model capability priors.",
+  "script_version": "2026-07-01-agentic-realtwin-v4-40-task-suite",
+  "selected_model_providers": {
+    "claude-fable-5": "claude",
+    "claude-mythos-5": "claude",
+    "claude-opus-4-8": "claude",
+    "deepseek-v4-pro": "ollama",
+    "gemini-3.5-flash": "gemini",
+    "gemma4": "ollama",
+    "glm-5": "ollama",
+    "gpt-5.5": "openai",
+    "gpt-oss": "ollama",
+    "kimi-k2.6": "ollama",
+    "ministral-3": "ollama",
+    "mnimax-m3": "ollama",
+    "nemotron-3-ultra": "ollama",
+    "qwen3.5": "ollama"
+  },
+  "selected_models": [
+    "gpt-5.5",
+    "claude-fable-5",
+    "claude-mythos-5",
+    "claude-opus-4-8",
+    "gemini-3.5-flash",
+    "nemotron-3-ultra",
+    "mnimax-m3",
+    "gemma4",
+    "qwen3.5",
+    "glm-5",
+    "deepseek-v4-pro",
+    "kimi-k2.6",
+    "gpt-oss",
+    "ministral-3"
+  ],
+  "source_hashes_sha256": {
+    "Agentic_RealTwin\\chat_bot_supervisor_HIL.py": "ac47605a0f7496a99009ceacde04d3159e46b41a5cf67247accbc6cf3ec1b48a",
+    "Agentic_RealTwin\\proj_tools\\__init__.py": "f7e8d8661f0bbf45d160979df47cc00dff08fc68f155b9d1fe9563f429cb4b20",
+    "Agentic_RealTwin\\proj_tools\\tool_realtwin.py": "c69492e6815eeddb4fe487498a43886ee9de83e5afa04a378d74c6ccc25318bb"
+  },
+  "task_count": 40,
+  "tool_registry": {
+    "hil_tools": [
+      "install_sumo",
+      "sumo_net_snapshot",
+      "get_place_info",
+      "get_osm_from_relation_id",
+      "get_osm_from_web",
+      "vis_osm",
+      "realtwin_edit_config",
+      "realtwin_save_config",
+      "realtwin_sample_run",
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "osm_tools": [
+      "get_place_info",
+      "get_osm_from_relation_id",
+      "get_osm_from_web",
+      "vis_osm"
+    ],
+    "rag_tools": [
+      "rag_tool",
+      "rag_tool_sim_parameters"
+    ],
+    "realtwin_tools": [
+      "realtwin_show_config",
+      "realtwin_edit_config",
+      "realtwin_save_config",
+      "realtwin_sample_run",
+      "realtwin_inputs_generation",
+      "realtwin_simulation",
+      "realtwin_show_default_config"
+    ],
+    "sumo_tools": [
+      "check_sumo_installed",
+      "install_sumo",
+      "sumo_net_snapshot"
+    ]
+  }
+}

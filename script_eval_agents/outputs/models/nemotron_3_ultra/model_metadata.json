@@ -1,0 +1,17 @@
+{
+  "api_ready": 0,
+  "model_id": "nemotron-3-ultra",
+  "provider": "ollama",
+  "provider_status": {
+    "api_key_name": "OLLAMA_API_KEY",
+    "api_key_present": 0,
+    "api_ready": 0,
+    "endpoint": "https://ollama.com",
+    "model_id": "nemotron-3-ultra",
+    "provider": "ollama",
+    "sdk_available": 1,
+    "selected_order": 5,
+    "system_id": "agentic_model_nemotron_3_ultra"
+  },
+  "system_id": "agentic_model_nemotron_3_ultra"
+}

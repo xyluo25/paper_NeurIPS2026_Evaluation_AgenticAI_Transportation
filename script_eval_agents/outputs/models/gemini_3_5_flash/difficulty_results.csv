@@ -1,0 +1,4 @@
+difficulty,tasks,end_to_end_success_rate,valid_artifact_rate,tool_success_rate,hil_recall,human_corrections
+Easy,10,1.0,0.9223,0.8,1.0,1.21
+Medium,15,1.0,0.8396,0.9333,1.0,1.83
+Hard,15,1.0,0.7212,0.9333,1.0,2.76

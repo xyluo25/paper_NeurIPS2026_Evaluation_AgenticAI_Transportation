@@ -1,0 +1,2 @@
+system_id,system,model_id,provider,api_key_name,api_ready,end_to_end_success_rate,valid_artifact_rate,domain_validity_score,simulation_run_rate,mean_geh,geh_lt5_rate,tool_success_rate,hil_recall,hil_precision,robust_completion_rate,human_corrections,avg_time_min
+agentic_model_qwen3_5,Agentic RealTwin (qwen3.5),qwen3.5,ollama,OLLAMA_API_KEY,0,0.975,0.8078,0.8104,0.6471,2.5728,0.9815,0.8417,1.0,0.9157,0.9333,2.09,16.15

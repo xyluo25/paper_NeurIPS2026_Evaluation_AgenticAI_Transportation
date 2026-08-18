@@ -1,0 +1,988 @@
+[
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "RAG",
+    "expected_tools": [
+      "rag_tool"
+    ],
+    "perturbation": "none",
+    "request": "Explain the RealTwin project team and summarize available local context.",
+    "required_artifacts": [
+      "short_report"
+    ],
+    "required_checks": [
+      "grounded_response",
+      "source_trace"
+    ],
+    "requires_calibration": false,
+    "requires_rag": true,
+    "requires_simulation": false,
+    "task_id": "E01"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "RAG",
+    "expected_tools": [
+      "rag_tool_sim_parameters"
+    ],
+    "perturbation": "none",
+    "request": "Recommend SUMO car-following and lane-changing parameter ranges.",
+    "required_artifacts": [
+      "parameter_summary"
+    ],
+    "required_checks": [
+      "parameter_units",
+      "source_trace"
+    ],
+    "requires_calibration": false,
+    "requires_rag": true,
+    "requires_simulation": false,
+    "task_id": "E02"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "SUMO",
+    "expected_tools": [
+      "check_sumo_installed"
+    ],
+    "perturbation": "none",
+    "request": "Check whether SUMO is installed and report executable paths.",
+    "required_artifacts": [
+      "environment_report"
+    ],
+    "required_checks": [
+      "dependency_check"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "E03"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_default_config"
+    ],
+    "perturbation": "none",
+    "request": "Show the default RealTwin configuration.",
+    "required_artifacts": [
+      "configuration_report"
+    ],
+    "required_checks": [
+      "config_schema"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "E04"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_config"
+    ],
+    "perturbation": "none",
+    "request": "Show the active RealTwin configuration.",
+    "required_artifacts": [
+      "configuration_report"
+    ],
+    "required_checks": [
+      "config_schema"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "E05"
+  },
+  {
+    "critical_tools": [
+      "get_place_info"
+    ],
+    "difficulty": "Easy",
+    "domain": "OSM",
+    "expected_tools": [
+      "get_place_info"
+    ],
+    "perturbation": "none",
+    "request": "Look up place information for Knoxville, Tennessee.",
+    "required_artifacts": [
+      "place_metadata"
+    ],
+    "required_checks": [
+      "bbox_validity"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "E06"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "OSM",
+    "expected_tools": [
+      "vis_osm"
+    ],
+    "perturbation": "none",
+    "request": "Visualize an existing OSM map stored in the output folder.",
+    "required_artifacts": [
+      "node_csv",
+      "link_csv",
+      "poi_csv",
+      "html_map"
+    ],
+    "required_checks": [
+      "network_consistency"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "E07"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "SUMO",
+    "expected_tools": [
+      "sumo_net_snapshot"
+    ],
+    "perturbation": "none",
+    "request": "Create a SUMO network snapshot for the example network.",
+    "required_artifacts": [
+      "network_png"
+    ],
+    "required_checks": [
+      "file_exists",
+      "view_settings"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "E08"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_sample_run"
+    ],
+    "perturbation": "none",
+    "request": "Run the RealTwin sample workflow using default demo data.",
+    "required_artifacts": [
+      "sample_run_log"
+    ],
+    "required_checks": [
+      "file_exists",
+      "workflow_trace"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "E09"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Easy",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_save_config"
+    ],
+    "perturbation": "none",
+    "request": "Save the current RealTwin configuration for user review.",
+    "required_artifacts": [
+      "saved_config"
+    ],
+    "required_checks": [
+      "file_exists",
+      "config_schema"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "E10"
+  },
+  {
+    "critical_tools": [
+      "get_osm_from_relation_id"
+    ],
+    "difficulty": "Medium",
+    "domain": "OSM",
+    "expected_tools": [
+      "get_osm_from_relation_id"
+    ],
+    "perturbation": "none",
+    "request": "Download OSM data by relation id and verify that map.osm was produced.",
+    "required_artifacts": [
+      "map_osm"
+    ],
+    "required_checks": [
+      "file_exists",
+      "xml_well_formed"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "M01"
+  },
+  {
+    "critical_tools": [
+      "get_osm_from_relation_id"
+    ],
+    "difficulty": "Medium",
+    "domain": "OSM",
+    "expected_tools": [
+      "get_osm_from_relation_id",
+      "vis_osm"
+    ],
+    "perturbation": "none",
+    "request": "Download and visualize a city-scale OSM network.",
+    "required_artifacts": [
+      "map_osm",
+      "node_csv",
+      "link_csv",
+      "html_map"
+    ],
+    "required_checks": [
+      "xml_well_formed",
+      "network_consistency"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "M02"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_config",
+      "realtwin_edit_config",
+      "realtwin_save_config"
+    ],
+    "perturbation": "none",
+    "request": "Edit the RealTwin traffic setting and save the revised configuration.",
+    "required_artifacts": [
+      "updated_config",
+      "saved_config"
+    ],
+    "required_checks": [
+      "config_schema",
+      "audit_trace"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "M03"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation"
+    ],
+    "difficulty": "Medium",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_inputs_generation"
+    ],
+    "perturbation": "none",
+    "request": "Generate RealTwin inputs for the example corridor with 18 SUMO edges, 9 junctions, and 7 traffic files.",
+    "required_artifacts": [
+      "matchup_table",
+      "control_files",
+      "traffic_files"
+    ],
+    "required_checks": [
+      "network_consistency",
+      "demand_nonnegative"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "M04"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation"
+    ],
+    "difficulty": "Medium",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_inputs_generation"
+    ],
+    "perturbation": "none",
+    "request": "Generate abstract and concrete simulation inputs from observed counts.",
+    "required_artifacts": [
+      "turn_file",
+      "flow_file",
+      "route_file"
+    ],
+    "required_checks": [
+      "turning_movement_mapping",
+      "demand_nonnegative"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "M05"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "RAG",
+    "expected_tools": [
+      "rag_tool_sim_parameters",
+      "realtwin_edit_config"
+    ],
+    "perturbation": "none",
+    "request": "Retrieve calibration guidance and apply it to RealTwin behavior parameters.",
+    "required_artifacts": [
+      "parameter_summary",
+      "updated_config"
+    ],
+    "required_checks": [
+      "source_trace",
+      "config_schema"
+    ],
+    "requires_calibration": false,
+    "requires_rag": true,
+    "requires_simulation": false,
+    "task_id": "M06"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "SUMO",
+    "expected_tools": [
+      "check_sumo_installed"
+    ],
+    "perturbation": "none",
+    "request": "Validate the generated SUMO configuration and route files.",
+    "required_artifacts": [
+      "sumocfg",
+      "route_file"
+    ],
+    "required_checks": [
+      "xml_well_formed",
+      "route_edge_consistency"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "M07"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation"
+    ],
+    "difficulty": "Medium",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_sample_run"
+    ],
+    "perturbation": "none",
+    "request": "Prepare simulation outputs and create a technical summary report.",
+    "required_artifacts": [
+      "simulation_log",
+      "technical_report"
+    ],
+    "required_checks": [
+      "workflow_trace",
+      "report_completeness"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "M08"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "OSM",
+    "expected_tools": [
+      "get_osm_from_web",
+      "vis_osm"
+    ],
+    "perturbation": "none",
+    "request": "Handle web-wizard OSM download and document assumptions.",
+    "required_artifacts": [
+      "map_osm",
+      "html_map",
+      "technical_report"
+    ],
+    "required_checks": [
+      "source_trace",
+      "network_consistency"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "M09"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation"
+    ],
+    "difficulty": "Medium",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_config",
+      "realtwin_inputs_generation"
+    ],
+    "perturbation": "none",
+    "request": "Create a corridor scenario report with configuration and file provenance.",
+    "required_artifacts": [
+      "technical_report",
+      "workflow_trace"
+    ],
+    "required_checks": [
+      "config_schema",
+      "reproducibility_log"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "M10"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "RAG",
+    "expected_tools": [
+      "rag_tool_sim_parameters",
+      "realtwin_show_config"
+    ],
+    "perturbation": "none",
+    "request": "Retrieve simulator-parameter guidance and record the source-backed assumptions.",
+    "required_artifacts": [
+      "parameter_summary",
+      "configuration_report"
+    ],
+    "required_checks": [
+      "source_trace",
+      "parameter_units",
+      "config_schema"
+    ],
+    "requires_calibration": false,
+    "requires_rag": true,
+    "requires_simulation": false,
+    "task_id": "M11"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "OSM",
+    "expected_tools": [
+      "vis_osm"
+    ],
+    "perturbation": "none",
+    "request": "Validate existing OSM-derived node, link, and POI files before visualization.",
+    "required_artifacts": [
+      "node_csv",
+      "link_csv",
+      "poi_csv",
+      "html_map"
+    ],
+    "required_checks": [
+      "file_exists",
+      "network_consistency",
+      "bbox_validity"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "M12"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "SUMO",
+    "expected_tools": [
+      "check_sumo_installed",
+      "sumo_net_snapshot"
+    ],
+    "perturbation": "none",
+    "request": "Check the SUMO environment and create a network snapshot for review.",
+    "required_artifacts": [
+      "environment_report",
+      "network_png"
+    ],
+    "required_checks": [
+      "dependency_check",
+      "file_exists",
+      "view_settings"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "M13"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_config",
+      "realtwin_edit_config",
+      "realtwin_save_config"
+    ],
+    "perturbation": "none",
+    "request": "Modify behavior parameters in the RealTwin configuration and save an auditable copy.",
+    "required_artifacts": [
+      "updated_config",
+      "saved_config",
+      "technical_report"
+    ],
+    "required_checks": [
+      "config_schema",
+      "audit_trace",
+      "reproducibility_log"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "M14"
+  },
+  {
+    "critical_tools": [],
+    "difficulty": "Medium",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_sample_run",
+      "realtwin_show_config"
+    ],
+    "perturbation": "none",
+    "request": "Run the sample workflow and summarize generated files for analyst review.",
+    "required_artifacts": [
+      "sample_run_log",
+      "technical_report",
+      "workflow_trace"
+    ],
+    "required_checks": [
+      "file_exists",
+      "report_completeness",
+      "reproducibility_log"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "M15"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "perturbation": "none",
+    "request": "Run RealTwin simulation and GEH-based calibration for the corridor.",
+    "required_artifacts": [
+      "sumocfg",
+      "route_file",
+      "calibration_report"
+    ],
+    "required_checks": [
+      "simulation_runs",
+      "geh_pass_rate",
+      "workflow_trace"
+    ],
+    "requires_calibration": true,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "H01"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "perturbation": "noisy_counts",
+    "request": "Calibrate the corridor with noisy observed turning-movement counts.",
+    "required_artifacts": [
+      "calibration_report",
+      "technical_report"
+    ],
+    "required_checks": [
+      "geh_pass_rate",
+      "robustness_to_noise"
+    ],
+    "requires_calibration": true,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "H02"
+  },
+  {
+    "critical_tools": [
+      "get_place_info",
+      "get_osm_from_relation_id"
+    ],
+    "difficulty": "Hard",
+    "domain": "OSM",
+    "expected_tools": [
+      "get_place_info",
+      "get_osm_from_relation_id"
+    ],
+    "perturbation": "ambiguous_location",
+    "request": "Resolve an ambiguous corridor name before downloading the network.",
+    "required_artifacts": [
+      "place_metadata",
+      "map_osm"
+    ],
+    "required_checks": [
+      "clarification_quality",
+      "bbox_validity"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "H03"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_inputs_generation"
+    ],
+    "perturbation": "missing_signal",
+    "request": "Continue input generation when one signal timing file is missing.",
+    "required_artifacts": [
+      "matchup_table",
+      "technical_report"
+    ],
+    "required_checks": [
+      "safe_fallback",
+      "known_limitations"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "H04"
+  },
+  {
+    "critical_tools": [
+      "get_osm_from_relation_id"
+    ],
+    "difficulty": "Hard",
+    "domain": "OSM",
+    "expected_tools": [
+      "get_osm_from_relation_id",
+      "get_osm_from_web"
+    ],
+    "perturbation": "tool_failure",
+    "request": "Recover from a failed OSM download and document the retry decision.",
+    "required_artifacts": [
+      "map_osm",
+      "workflow_trace"
+    ],
+    "required_checks": [
+      "tool_recovery",
+      "source_trace"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "H05"
+  },
+  {
+    "critical_tools": [
+      "install_sumo"
+    ],
+    "difficulty": "Hard",
+    "domain": "SUMO",
+    "expected_tools": [
+      "check_sumo_installed",
+      "install_sumo"
+    ],
+    "perturbation": "missing_dependency",
+    "request": "Handle missing SUMO dependency and request approval before installing.",
+    "required_artifacts": [
+      "environment_report",
+      "installation_log"
+    ],
+    "required_checks": [
+      "dependency_check",
+      "human_confirmation"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "H06"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_config",
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "perturbation": "none",
+    "request": "Run a full scenario-generation workflow with a user-provided config path.",
+    "required_artifacts": [
+      "sumocfg",
+      "route_file",
+      "calibration_report",
+      "technical_report"
+    ],
+    "required_checks": [
+      "config_schema",
+      "simulation_runs",
+      "geh_pass_rate"
+    ],
+    "requires_calibration": true,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "H07"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "perturbation": "inconsistent_route",
+    "request": "Detect route-edge inconsistencies before reporting the scenario as valid.",
+    "required_artifacts": [
+      "route_file",
+      "validation_report"
+    ],
+    "required_checks": [
+      "route_edge_consistency",
+      "safe_fallback"
+    ],
+    "requires_calibration": true,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "H08"
+  },
+  {
+    "critical_tools": [
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RAG",
+    "expected_tools": [
+      "rag_tool_sim_parameters",
+      "realtwin_edit_config",
+      "realtwin_simulation"
+    ],
+    "perturbation": "none",
+    "request": "Use retrieved calibration guidance to justify parameter updates and rerun calibration.",
+    "required_artifacts": [
+      "parameter_summary",
+      "updated_config",
+      "calibration_report"
+    ],
+    "required_checks": [
+      "source_trace",
+      "geh_pass_rate",
+      "audit_trace"
+    ],
+    "requires_calibration": true,
+    "requires_rag": true,
+    "requires_simulation": true,
+    "task_id": "H09"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_config",
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "perturbation": "missing_input_dir",
+    "request": "Produce a complete auditable scenario report under missing input-directory uncertainty.",
+    "required_artifacts": [
+      "technical_report",
+      "workflow_trace",
+      "known_limitations"
+    ],
+    "required_checks": [
+      "safe_fallback",
+      "reproducibility_log",
+      "geh_pass_rate"
+    ],
+    "requires_calibration": true,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "H10"
+  },
+  {
+    "critical_tools": [
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RAG",
+    "expected_tools": [
+      "rag_tool_sim_parameters",
+      "realtwin_edit_config",
+      "realtwin_simulation"
+    ],
+    "perturbation": "missing_calibration_context",
+    "request": "Recover missing calibration context by retrieving parameter guidance before rerunning simulation.",
+    "required_artifacts": [
+      "parameter_summary",
+      "updated_config",
+      "calibration_report"
+    ],
+    "required_checks": [
+      "source_trace",
+      "audit_trace",
+      "geh_pass_rate"
+    ],
+    "requires_calibration": true,
+    "requires_rag": true,
+    "requires_simulation": true,
+    "task_id": "H11"
+  },
+  {
+    "critical_tools": [
+      "get_place_info",
+      "get_osm_from_relation_id"
+    ],
+    "difficulty": "Hard",
+    "domain": "OSM",
+    "expected_tools": [
+      "get_place_info",
+      "get_osm_from_relation_id",
+      "vis_osm"
+    ],
+    "perturbation": "ambiguous_location",
+    "request": "Resolve an ambiguous place request, recover the network download, and verify the visualization.",
+    "required_artifacts": [
+      "place_metadata",
+      "map_osm",
+      "html_map"
+    ],
+    "required_checks": [
+      "clarification_quality",
+      "bbox_validity",
+      "network_consistency"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "H12"
+  },
+  {
+    "critical_tools": [
+      "install_sumo"
+    ],
+    "difficulty": "Hard",
+    "domain": "SUMO",
+    "expected_tools": [
+      "check_sumo_installed",
+      "install_sumo",
+      "sumo_net_snapshot"
+    ],
+    "perturbation": "missing_dependency",
+    "request": "Recover from a missing SUMO dependency before producing a network-review snapshot.",
+    "required_artifacts": [
+      "environment_report",
+      "installation_log",
+      "network_png"
+    ],
+    "required_checks": [
+      "dependency_check",
+      "human_confirmation",
+      "view_settings"
+    ],
+    "requires_calibration": false,
+    "requires_rag": false,
+    "requires_simulation": false,
+    "task_id": "H13"
+  },
+  {
+    "critical_tools": [
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_config",
+      "realtwin_inputs_generation",
+      "realtwin_simulation"
+    ],
+    "perturbation": "missing_traffic_file",
+    "request": "Regenerate inputs and rerun simulation when one observed traffic file is missing.",
+    "required_artifacts": [
+      "matchup_table",
+      "technical_report",
+      "calibration_report"
+    ],
+    "required_checks": [
+      "safe_fallback",
+      "demand_nonnegative",
+      "geh_pass_rate"
+    ],
+    "requires_calibration": true,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "H14"
+  },
+  {
+    "critical_tools": [
+      "realtwin_simulation"
+    ],
+    "difficulty": "Hard",
+    "domain": "RealTwin",
+    "expected_tools": [
+      "realtwin_show_config",
+      "realtwin_edit_config",
+      "realtwin_simulation"
+    ],
+    "perturbation": "failed_simulation_recovery",
+    "request": "Audit a failed simulation, edit configuration assumptions, rerun, and report unresolved limitations.",
+    "required_artifacts": [
+      "updated_config",
+      "validation_report",
+      "known_limitations"
+    ],
+    "required_checks": [
+      "tool_recovery",
+      "audit_trace",
+      "safe_fallback"
+    ],
+    "requires_calibration": true,
+    "requires_rag": false,
+    "requires_simulation": true,
+    "task_id": "H15"
+  }
+]
